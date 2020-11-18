@@ -1,0 +1,259 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Rishab}{Kumar}{ 
+\href{http://www.linkedin.com/in/potter1024}{ LinkedIn Profile | }
+\href{http://www.github.com/potter1024}{Github Profile  }
+\linebreak
+\href{mailto:rishabkumar1024@gmail.com}{rishabkumar1024@gmail.com} | \href{mailto:rishab.ee17@iitp.ac.in}{rishab.ee17@iitp.ac.in} | +91 95342 16069
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{IIT Patna}
+\descript{B.Tech, Electrical Eng.}
+\location{2017-Present}
+\location{CPI: 8.0/10.0 (after 6 semesters)}
+\sectionsep
+
+\subsection{DAV Shimla, HP}
+\descript{Class XII, CBSE}
+\location{2014-2016}
+\location{Percentage: 93.0\%}
+\sectionsep
+
+\subsection{DAV Shimla, HP}
+\descript{Class X, CBSE}
+\location{2013-2014}
+\location{CGPA: 10/10}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+\descript{Experienced}
+C, C++ \\
+\descript{Intermediate}
+Python, Javascript, SQL \\
+\descript{Familiar}
+HTML, CSS, PHP
+\sectionsep
+
+\subsection{Operating Systems}
+Windows, Linux, MacOS
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Courses Completed}
+\subsection{Computer Science}
+Algorithms and Data Structures \\
+Analysis of algorithms \\
+Graph Theory \\
+Database Management System \\
+Object Oriented Programming \\
+Introduction to Data Science \\
+Python Programming
+\sectionsep
+
+\subsection{Mathematics}
+Probability Theory \\
+Partial Differential Equations \\
+Linear Algebra\\
+Discrete Mathematics
+
+\section{Links} 
+Github:// \href{http://www.github.com/potter1024}{\bf potter1024} \\
+LinkedIn:// \href{http://www.linkedin.com/in/potter1024}{\bf potter1024} \\
+Codeforces:// \href{https://codeforces.com/profile/potter1024}{\bf potter1024} \\
+Codechef:// \href{https://www.codechef.com/users/potter1024}{\bf potter1024} \\
+Stopstalk:// \href{https://www.stopstalk.com/user/profile/potter1024}{\bf potter1024}\\
+HackerRank:// \href{https://www.hackerrank.com/potter1024}{\bf potter1024}\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+\runsubsection{\textbf{{Willings}}}
+\descript{| \href{https://drive.google.com/file/d/1ytK5J1GFBgQVR2Up64H8qPb5pSXtUv7n/view}{Software Engineering Intern}}
+\mbox{\location{{May 2020 - July 2020 |\descript{Tokyo, Japan} (remote)}}}
+\vspace{\topsep}
+\begin{tightemize}
+\item Added new features to the existing \textbf{API} and created new APIs to extend the functions of the website.
+\item Worked on \textbf{Node.js} and used \textbf{Google Firebase} as the database.
+\item Implemented optimised searching and sorting techniques for \textbf{querying} and \textbf{organising the result of query from the database}.
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{\textbf{Angarak}}
+% \descript{| Software Engineering Intern}
+% \mbox{\location{June 2020 - Present | \descript{San Diego, USA} (remote)}}
+% \begin{tightemize}
+% \item Worked on converting the existing \textbf{neural network} model in \textbf{Opencv} from \textbf{python} to \textbf{C++}.
+% \end{tightemize}
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{\textbf{\href{https://github.com/potter1024/Social-Media-Web-Application}{Social Media Web application}}}
+\descript{| Dec 2019}
+\begin{tightemize}
+\item Developed a social media web application using \textbf{PHP} for backend, \textbf{MYSQL} for the database and \textbf{HTML, CSS} for frontend.
+\item Implemented features like \textbf{searching friends of friends, showing mutual friends with someone}, and other basic features as posting, liking and commenting on posts, news-feed, etc.
+\end{tightemize} 
+\sectionsep
+
+\runsubsection{\href{https://github.com/potter1024/Unbeatable-TicTacToe-Algorithm}{Perfect AI for Tic-Tac-Toe game}}
+\descript{| June 2019}
+\begin{tightemize}
+\item Designed an \textbf{unbeatable} Tic-Tac-Toe AI by using the  \textbf{Minimax Algorithm} from \textbf{Game Theory} in command line interface implemented in  \textbf{C++}.
+\item Simulated two independent algorithms to play against each other 1000 times that always resulted in a \textbf{draw}.
+\end{tightemize} 
+\sectionsep
+
+\runsubsection{\href{https://github.com/potter1024/Image-Classifier}{Multivariate Image Classifier}}
+\descript{| April 2020}
+\begin{tightemize}
+\item Implemented \textbf{3 layered Convolutional Neural Network} from \textbf{keras} to classify images of \textbf{10} different classes.
+\item The \textbf{performance} of the neural network model as calculated from  \textbf{confusion matrix} was \textbf{67.1\%}.
+\end{tightemize} 
+\sectionsep
+
+\runsubsection{\href{https://github.com/potter1024/Autocomplete-Feature-using-Trie}{Auto-complete and auto-suggest}}
+\descript{| March 2019}
+\begin{tightemize}
+\item Implemented the auto-suggest feature using \textbf{Trie Data structure}, which gives completion options based on \textbf{user input.}
+\item Calculated the search speed as \textbf{330} times faster than the  \textbf{prefix search}.
+\end{tightemize} 
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements}
+\runsubsection{}
+\vspace{\topsep}
+\begin{tightemize}
+\item {Ranked top \textbf{2.7\%} in \textbf{JEE Advanced 2017(India)} in 220k candidates}
+\item Codeforces highest rating: \textbf{1743 (Expert)}.
+\item Codechef highest rating: \textbf{2129 (5 star)}.
+\item Secured rank of \textbf{95/6788} in Codeforces Round 535.
+\item Secured rank of \textbf{44/4015} in Codechef Lunchtime Challenge.
+\item Secured rank of \textbf{701/13650} in \textbf{Google Kickstart 2020 Round C}.
+\item Secured rank of \textbf{83/4353} in \textbf{Hackerrank: Hack The Interview IV}.
+\end{tightemize} 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Extracurriculars/ POR}
+\runsubsection{}
+\vspace{\topsep}
+\begin{tightemize}
+\item \textbf{Task-Manager} of \textbf{Sponsorship and Finance} committee in \textbf{Entrepreneur Cell, IIT Patna} | Oct 2018-Apr 2019
+\item Member of \textbf{Atheletics Club} of \textbf{IIT Patna} | Jan-Mar 2018
+\end{tightemize} 
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
